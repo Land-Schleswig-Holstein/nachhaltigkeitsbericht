@@ -22,8 +22,8 @@ breadcrumbs:
 cookie_consent_form:
   enabled: false
 country:
-  name: Australia
-  adjective: Australian
+  name: Schleswig-Holstein
+  adjective: Schleswig-Holstein
 create_goals:
   previous_next_links: false
   goals: []
@@ -206,7 +206,7 @@ news:
 progress_status:
   status_heading: ''
   status_types: []
-remote_data_prefix: 'https://land-schleswig-holstein.github.io/osdg-data'
+remote_data_prefix: https://land-schleswig-holstein.github.io/osdg-data
 reporting_status:
   title: status.reporting_status
   description: status.description
@@ -221,8 +221,8 @@ reporting_status:
     - value: notapplicable
       label: status.not_applicable
       hide_on_goal_pages: false
-repository_url_data: 'https://github.com/Land-Schleswig-Holstein/osdg-data'
-repository_url_site: 'https://github.com/Land-Schleswig-Holstein/nachhaltigkeitsbericht'
+repository_url_data: https://github.com/Land-Schleswig-Holstein/osdg-data
+repository_url_site: https://github.com/Land-Schleswig-Holstein/nachhaltigkeitsbericht
 search_index_boost: []
 search_index_extra_fields: []
 site_config_form:
@@ -238,3 +238,8 @@ time_series_attributes:
 validate_indicator_config: false
 validate_site_config: false
 x_axis_label: ''
+# Konfiguration
+use_new_config_forms: true
+indicator_metadata_form:
+  enabled: true
+  translated: false
