@@ -1,6 +1,6 @@
 ---
 layout: categories
-language: en
+language: de
 permalink: /categories/
 title: Categories
 ---
