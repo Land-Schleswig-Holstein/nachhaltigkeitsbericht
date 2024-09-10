@@ -206,7 +206,7 @@ news:
 progress_status:
   status_heading: ''
   status_types: []
-remote_data_prefix: https://land-schleswig-holstein.github.io/osdg-data
+remote_data_prefix: https://land-schleswig-holstein.github.io/osdg-data/
 reporting_status:
   title: status.reporting_status
   description: status.description
@@ -236,7 +236,7 @@ time_series_attributes:
   - field: DATA_LAST_UPDATE
     label: metadata_fields.national_data_update_url
 validate_indicator_config: false
-validate_site_config: false
+validate_site_config: true
 x_axis_label: ''
 # Konfiguration
 use_new_config_forms: true
