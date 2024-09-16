@@ -6,27 +6,27 @@
       "indicators": [
         
         {
-          "id": "1-1-1",
+          "id": "1-1",
           "title": "Erwerbstätigenquote",
           "description": "",
           "keywords": "",
-          "href": "/nachhaltigkeitsbericht/1-1-1/",
+          "href": "/nachhaltigkeitsbericht/1-1/",
           "status": "complete"
         },
         {
-          "id": "1-1-2-1",
+          "id": "1-2-1",
           "title": "Arbeitslosenquote",
           "description": "",
           "keywords": "",
-          "href": "/nachhaltigkeitsbericht/1-1-2-1/",
+          "href": "/nachhaltigkeitsbericht/1-2-1/",
           "status": "complete"
         },
         {
-          "id": "1-1-2-2",
+          "id": "1-2-2",
           "title": "Arbeitslosenanteile",
           "description": "",
           "keywords": "",
-          "href": "/nachhaltigkeitsbericht/1-1-2-2/",
+          "href": "/nachhaltigkeitsbericht/1-2-2/",
           "status": "complete"
         }]
     }
@@ -38,8 +38,16 @@
       "indicators": [
         
         {
-          "id": "16-1-1",
+          "id": "16-1",
           "title": "Straftaten Häufigkeitszahlen",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/16-1/",
+          "status": "complete"
+        },
+        {
+          "id": "16-1-1",
+          "title": "global_indicators.16-1-1-title",
           "description": "",
           "keywords": "",
           "href": "/nachhaltigkeitsbericht/16-1-1/",

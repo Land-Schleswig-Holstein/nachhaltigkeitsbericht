@@ -117,7 +117,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Indikatoren für die nachhaltigen Entwicklungsziele</title>
+    <title>Daten bearbeiten: 1.2.2 - Indikatoren für die nachhaltigen Entwicklungsziele</title>
 
 
 
@@ -162,7 +162,7 @@ var translations = {
 
     </head>
 <body class="language-de
-layout-frontpage
+layout-data-editor
 ">
 <!-- <div class="container"> -->
 
@@ -197,7 +197,7 @@ layout-frontpage
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" id="menu"><li class="nav-item active">
+                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
     <a class="nav-link" href="/nachhaltigkeitsbericht/">Startseite</a>
 </li><li class="nav-item ">
     <a class="nav-link" href="/nachhaltigkeitsbericht/goals">Ziele</a>
@@ -241,188 +241,133 @@ data-event-label="high"
 
 
 <div id="main-content" class="container" role="main">
-
-    
-    <div class="site-intro">
-        <h1>17 Ziele, um unsere Welt zu verändern</h1>
-        <div class="lead-copy"><p>Die <a href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/">Sustainable Development Goals (SDGs)</a> sind ein universeller Aufruf zum Handeln, um die Armut zu beenden, den Planeten zu schützen und das Leben und die Perspektiven aller Menschen überall zu verbessern. Die 17 Ziele wurden 2015 von allen UN-Mitgliedsstaaten als Teil der <a href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/70/1&amp;Lang= E">Agenda 2030 für nachhaltige Entwicklung</a> beschlossen.</p>
-</div>
-    </div>
-    
-
-    
-    <div class="frontpage-goals-grid">
-
-        
-        <h2 class="frontpage-goals-grid-title">Die Daten Schleswig-Holsteins zu den Zielen für nachhaltige Entwicklung</h2>
-        
-
-        
-        <div class="frontpage-goals-grid-description"><p>Wählen Sie ein Ziel um zu den Daten der Indikatoren zu gelangen.</p>
-</div>
-        
-
-        <div class="goal-tiles">
-    <div class="row g-2">
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/nachhaltigkeitsbericht/1/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/1.png" id="goal-1" alt="Ziel 1 - Keine Armut" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-        <div class="col-4 col-md-2 col-lg-1 goal-tile">
-            <a href="/nachhaltigkeitsbericht/16/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/16.png" id="goal-16" alt="Ziel 16 - Frieden, Gerechtigkeit und starke Institutionen" class="goal-icon-image goal-icon-image-"/>
-            </a>
-        </div>
-        
-    </div>
-</div>
-    </div>
-    
-
-    
-    <div class="frontpage-cards">
-    
-        
-
-        
-        <div class="row">
-        
-
-        <div class="col-sm-6 col-md-4">
-    <div class="card">
-    <div class="card-body">
-
-    
-    <h2 class="card-title"
-        
-        style="border-color: ;"
-        
-    >Alle Daten herunterladen (.zip)</h2>
-    
-  
-    
-  
-    
-      <div class="zip-download-container">
-    <a href="https://land-schleswig-holstein.github.io/osdg-data/de/zip/all_indicators.zip"
-       role="button"
-       class="btn btn-primary btn-download" aria-describedby="zip-download-info">
-        Alle Daten herunterladen (.zip)
-    </a>
-    <div id="zip-download-info">
-        Größe: 4.5 kB
-        
-            <br>
-            Daten zuletzt aktualisiert am - Sep 16, 2024
-        
-    </div>
-</div>
-
-    
-  
-    
-
-    </div>
-  
+  <div class="row no-gutters">
+    <div class="col-md-12"><h1>Daten bearbeiten: 1.2.2</h1></div>
   </div>
-  
+  <div class="row config-widgets">
+    <div class="col-md-6 data-grid-buttons">
+      <label for="add-column-name">Column name</label>
+      <input id="add-column-name" />
+      <button class="btn btn-primary btn-download" id="add-column">Add column</a>
+    </div>
+    <div class="col-md-6 data-download-buttons">
+      <button class="config-download-button btn btn-primary btn-download" id="export">Download data</button>
+      
+      
+      
+      
+      <a class="config-repository-button btn btn-primary btn-download" target="_blank" href="https://github.com/Land-Schleswig-Holstein/osdg-data/tree/develop/data">
+        Go to repository
+      </a>
+      
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="editor-wrapper col-md-12">
+      <div id="editor-holder" style="height: 900px; width: 100%;" class="ag-theme-alpine"></div>
+    </div>
   </div>
 
-        
+  <script src="https://unpkg.com/papaparse@5.3.2/papaparse.min.js"></script>
+  <script src="https://unpkg.com/ag-grid-community@28.2.1/dist/ag-grid-community.min.noStyle.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community@28.2.1/dist/styles/ag-grid.css">
+  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community@28.2.1/dist/styles/ag-theme-alpine.css">
 
-    
-        
+  <script>
+  var httpRequest;
+  var gridOptions;
+  function makeRequest() {
+    httpRequest = new XMLHttpRequest();
 
-        
+    if (!httpRequest) {
+      alert('Giving up :( Cannot create an XMLHTTP instance');
+      return false;
+    }
+    httpRequest.onreadystatechange = displaySpreadsheet;
+    httpRequest.open('GET', 'https://land-schleswig-holstein.github.io/osdg-data/untranslated/data/1-2-2.csv');
+    httpRequest.send();
+  }
 
-        <div class="col-sm-6 col-md-4">
-    <div class="card">
-    <div class="card-body">
+  function displaySpreadsheet() {
+    if (httpRequest.readyState === XMLHttpRequest.DONE) {
+      if (httpRequest.status === 200) {
+        var csvString = httpRequest.responseText;
+        var csvData = Papa.parse(csvString, {header: true});
+        var columnDefs = [],
+            rowData = [];
+        if (csvData.data.length > 0) {
+          rowData = csvData.data;
+          columnDefs = Object.keys(rowData[0]).map(function(key) {
+            var columnDef = { field: key, headerName: key };
+            if (key === 'Value') {
+              columnDef['type'] = 'rightAligned';
+            }
+            return columnDef;
+          });
+        }
+        var container = document.getElementById('editor-holder');
+        gridOptions = {
+          defaultColDef: {
+            editable: true,
+            resizable: true,
+            minWidth: 100,
+            flex: 1,
+          },
+          columnDefs: columnDefs,
+          rowData: rowData,
+          undoRedoCellEditing: true,
+          undoRedoCellEditingLimit: 5,
+          enableCellChangeFlash: true,
+          enterMovesDownAfterEdit: true,
+          suppressDragLeaveHidesColumns: true,
+          applyColumnDefOrder: true,
+          onCellValueChanged: function(info) {
+            if (info.rowIndex + 1 === this.api.getDisplayedRowCount()) {
+              this.api.applyTransaction({
+                add: [{}],
+              });
+            }
+          }
+        };
 
-    
-    <h2 class="card-title"
-        
-        style="border-color: ;"
-        
-    >Lorem ipsum</h2>
-    
-  
-    
-    <div class="card-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis
-cursus est sed dapibus.</p>
-</div>
-    
-  
-    
-  
-    
-    
-    
-    
-    <a class="btn btn-primary btn-download" href="https://example.com">
-      Read more
-    </a>
-    
+        new agGrid.Grid(container, gridOptions);
+      } else {
+        alert('There was a problem when loading the data. Please edit the data in some other way (such as in Github).');
+      }
+    }
+  }
 
-    </div>
-  
-  </div>
-  
-  </div>
+  document.addEventListener('DOMContentLoaded', function() {
+    makeRequest();
+  });
 
-        
+  document.getElementById('export').onclick = function() {
+    gridOptions.api.stopEditing();
+    gridOptions.api.exportDataAsCsv({
+      fileName: 'indicator_1-2-2',
+    });
+  }
 
-    
-        
-
-        
-
-        <div class="col-sm-6 col-md-4">
-    <div class="card">
-    <div class="card-body">
-
-    
-    <h2 class="card-title"
-        
-        style="border-color: ;"
-        
-    >Nam vestibulum</h2>
-    
-  
-    
-    <div class="card-text"><p>Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
-interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.</p>
-</div>
-    
-  
-    
-  
-    
-    
-    
-    
-    <a class="btn btn-primary btn-download" href="https://example.com">
-      Read more
-    </a>
-    
-
-    </div>
-  
-  </div>
-  
-  </div>
-
-        
-        </div>
-        
-
-    
-    </div>
-    
-
+  document.getElementById('add-column').onclick = function() {
+    var columnName = document.getElementById('add-column-name').value;
+    if (columnName && columnName !== '') {
+      var columnDefs = gridOptions.columnDefs;
+      var newColumn = { field: columnName, headerName: columnName };
+      if (columnDefs.length > 1) {
+        // Put it second-to-last if possible.
+        columnDefs.splice(columnDefs.length - 1, 0, newColumn);
+      }
+      else {
+        // Otherwise just last.
+        columnDefs.push(newColumn);
+      }
+      gridOptions.api.setColumnDefs(columnDefs);
+    }
+    else {
+      alert('Please enter a column name first and then try again.');
+    }
+  }
+  </script>
 </div>
 <footer role="contentinfo">
     <div class="container">
