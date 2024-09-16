@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/nachhaltigkeitsbericht/assets/css/style.css?v=20240916140548">
+        <link rel="stylesheet" href="/nachhaltigkeitsbericht/assets/css/style.css?v=20240916141441">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -406,7 +406,7 @@ data-event-label="high"
   data-country="Schleswig-Holstein"
   data-charttitle="Arbeitslosenanteile"
   data-charttitles="null"
-  data-measurementunit="Prozent (%)"
+  data-measurementunit="Arbeitslose"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -420,7 +420,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Unnamed: 1&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Langzeitarbeitslose&quot;,&quot;Arbeitslose ohne Berufsausbildung&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Unnamed: 1&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Gruppe&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Langzeitarbeitslose&quot;,&quot;Arbeitslose ohne Berufsausbildung&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Gruppe&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -485,7 +485,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">107.326</td>
+          <td class="table-value">107326.0</td>
           
           
         </tr>
@@ -497,7 +497,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">110.373</td>
+          <td class="table-value">110373.0</td>
           
           
         </tr>
@@ -509,7 +509,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">107.176</td>
+          <td class="table-value">107176.0</td>
           
           
         </tr>
@@ -521,7 +521,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">103.714</td>
+          <td class="table-value">103714.0</td>
           
           
         </tr>
@@ -533,7 +533,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">100.051</td>
+          <td class="table-value">100051.0</td>
           
           
         </tr>
@@ -545,7 +545,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">101.751</td>
+          <td class="table-value">101751.0</td>
           
           
         </tr>
@@ -557,7 +557,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">100.957</td>
+          <td class="table-value">100957.0</td>
           
           
         </tr>
@@ -569,7 +569,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">97.85</td>
+          <td class="table-value">97850.0</td>
           
           
         </tr>
@@ -581,7 +581,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">94.977</td>
+          <td class="table-value">94977.0</td>
           
           
         </tr>
@@ -593,7 +593,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">92.434</td>
+          <td class="table-value">92434.0</td>
           
           
         </tr>
@@ -605,7 +605,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">85.053</td>
+          <td class="table-value">85053.0</td>
           
           
         </tr>
@@ -620,7 +620,7 @@ data-event-label="high"
     
     
     
-    <p>Einheit: Prozent (%)</p>
+    <p>Einheit: Arbeitslose</p>
     
     
   </div>
@@ -1535,12 +1535,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/nachhaltigkeitsbericht/assets/js/sdg.js?v=20240916140548'></script>
+<script src='/nachhaltigkeitsbericht/assets/js/sdg.js?v=20240916141441'></script>
 
 
     
     
-    <script src="/nachhaltigkeitsbericht/assets/js/custom.js?v=20240916140548"></script><script>
+    <script src="/nachhaltigkeitsbericht/assets/js/custom.js?v=20240916141441"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
