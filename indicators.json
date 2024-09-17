@@ -6,11 +6,11 @@
       "indicators": [
         
         {
-          "id": "1-1",
-          "title": "global_indicators.1-1-title",
+          "id": "1-1-1",
+          "title": "Erwerbstätigkeitsquote",
           "description": "",
           "keywords": "",
-          "href": "/nachhaltigkeitsbericht/1-1/",
+          "href": "/nachhaltigkeitsbericht/1-1-1/",
           "status": "complete"
         },
         {
@@ -38,11 +38,11 @@
       "indicators": [
         
         {
-          "id": "16-1",
-          "title": "global_indicators.16-1-title",
+          "id": "16-1-1",
+          "title": "Inhaftierung-",
           "description": "",
           "keywords": "",
-          "href": "/nachhaltigkeitsbericht/16-1/",
+          "href": "/nachhaltigkeitsbericht/16-1-1/",
           "status": "complete"
         }]
     }
