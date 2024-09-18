@@ -117,7 +117,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Konfiguration bearbeiten: 16.1.1 - Indikatoren für die nachhaltigen Entwicklungsziele</title>
+    <title>Konfiguration bearbeiten: 1.5.1 - Indikatoren für die nachhaltigen Entwicklungsziele</title>
 
 
 
@@ -242,7 +242,7 @@ data-event-label="high"
 
 <div id="main-content" class="container" role="main">
   <div class="row">
-    <div class="col-md-12"><h1>Konfiguration bearbeiten: 16.1.1</h1></div>
+    <div class="col-md-12"><h1>Konfiguration bearbeiten: 1.5.1</h1></div>
   </div>
   <div class="config-widgets row">
     <div class="col-md-6" id="search_holder">
@@ -468,7 +468,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('computation_units', "Straftaten");
+        var currentValue = normalizeCurrentValue('computation_units', "Percentage");
         var propertyEditor = editor.getEditor('root.computation_units');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -520,6 +520,18 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_target_lines'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('graph_title', "Proportion of wetland that is degraded over total wetland area");
+        var propertyEditor = editor.getEditor('root.graph_title');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: graph_title');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_title'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_titles'));
@@ -542,7 +554,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('indicator_name', "global_indicators.16-1-1-title");
+        var currentValue = normalizeCurrentValue('indicator_name', "Proportion of wetland that is degraded over total wetland area");
         var propertyEditor = editor.getEditor('root.indicator_name');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -556,7 +568,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('indicator_number', "16.1.1");
+        var currentValue = normalizeCurrentValue('indicator_number', "15.3.1.a");
         var propertyEditor = editor.getEditor('root.indicator_number');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -633,7 +645,7 @@ data-event-label="high"
     function addTranslationLink(propertyEditor) {
       var parts = propertyEditor.value.split('.');
       var translationLink = '';
-      translationLink = translationLink.replace('[id]', '16-1-1');
+      translationLink = translationLink.replace('[id]', '1-5-1');
       translationLink = translationLink.replace('[group]', parts[0]);
       translationLink = translationLink.replace('[key]', parts[1]);
       translationLink = translationLink.replace('[language]', 'de');
@@ -668,7 +680,7 @@ data-event-label="high"
       else {
         var config = editor.getValue();
         var yaml = jsyaml.safeDump(config);
-        SaveAsFile(yaml, '16-1-1.yml', 'text/plain;charset=utf-8');
+        SaveAsFile(yaml, '1-5-1.yml', 'text/plain;charset=utf-8');
       }
     });
 
