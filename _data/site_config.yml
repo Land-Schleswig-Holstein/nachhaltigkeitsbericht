@@ -192,12 +192,16 @@ menu:
     dropdown: []    
 metadata_edit_url: metadata
 metadata_tabs:
-  - scope: national
-    title: indicator.national_metadata
-    description: indicator.national_metadata_blurb
-  - scope: global
-    title: indicator.global_metadata
-    description: indicator.global_metadata_blurb
+  - scope: publications
+    title: Mehr Informationen
+    description: Weiterführende Indikator-Informationen des Landes Schleswig-Holstein finden Sie hier:
+    placeholder: Noch keine weiteren Infos hinterlegt.
+  #- scope: national
+  #  title: indicator.national_metadata
+  #  description: indicator.national_metadata_blurb
+  # - scope: global
+  #  title: indicator.global_metadata
+  #  description: indicator.global_metadata_blurb
   - scope: sources
     title: indicator.sources
     description: ''
