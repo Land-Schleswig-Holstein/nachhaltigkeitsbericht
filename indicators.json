@@ -89,6 +89,22 @@
   },
   {
     "goal": {
+      "id": "8",
+      "title": "Dauerhaftes, breitenwirksames und nachhaltiges Wirtschaftswachstum, produktive Vollbeschäftigung und menschenwürdige Arbeit für alle fördern",
+      "indicators": [
+        
+        {
+          "id": "8-2",
+          "title": "global_indicators.8-2-title",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/8-2/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "16",
       "title": "Friedliche und inklusive Gesellschaften für eine nachhaltige Entwicklung fördern, allen Menschen Zugang zur Justiz ermöglichen und leistungsfähige, rechenschaftspflichtige und inklusive Institutionen auf allen Ebenen aufbauen",
       "indicators": [

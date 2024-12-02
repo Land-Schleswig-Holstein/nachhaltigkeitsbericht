@@ -117,7 +117,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Konfiguration bearbeiten: 1.3.1 - Indikatoren für die nachhaltigen Entwicklungsziele</title>
+    <title>Konfiguration bearbeiten: 8.2 - Indikatoren für die nachhaltigen Entwicklungsziele</title>
 
 
 
@@ -242,7 +242,7 @@ data-event-label="high"
 
 <div id="main-content" class="container" role="main">
   <div class="row">
-    <div class="col-md-12"><h1>Konfiguration bearbeiten: 1.3.1</h1></div>
+    <div class="col-md-12"><h1>Konfiguration bearbeiten: 8.2</h1></div>
   </div>
   <div class="config-widgets row">
     <div class="col-md-6" id="search_holder">
@@ -510,7 +510,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('graph_title', "Der Indikator gibt die Beschäftigten im Niedriglohnsektor an.");
+        var currentValue = normalizeCurrentValue('graph_title', "global_indicators.8-2-title");
         var propertyEditor = editor.getEditor('root.graph_title');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -542,7 +542,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('indicator_name', "global_indicators.1-3-1-title");
+        var currentValue = normalizeCurrentValue('indicator_name', "global_indicators.8-2-title");
         var propertyEditor = editor.getEditor('root.indicator_name');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -556,7 +556,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('indicator_number', "1.3.1");
+        var currentValue = normalizeCurrentValue('indicator_number', "8.2");
         var propertyEditor = editor.getEditor('root.indicator_number');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -633,7 +633,7 @@ data-event-label="high"
     function addTranslationLink(propertyEditor) {
       var parts = propertyEditor.value.split('.');
       var translationLink = '';
-      translationLink = translationLink.replace('[id]', '1-3-1');
+      translationLink = translationLink.replace('[id]', '8-2');
       translationLink = translationLink.replace('[group]', parts[0]);
       translationLink = translationLink.replace('[key]', parts[1]);
       translationLink = translationLink.replace('[language]', 'de');
@@ -668,7 +668,7 @@ data-event-label="high"
       else {
         var config = editor.getValue();
         var yaml = jsyaml.safeDump(config);
-        SaveAsFile(yaml, '1-3-1.yml', 'text/plain;charset=utf-8');
+        SaveAsFile(yaml, '8-2.yml', 'text/plain;charset=utf-8');
       }
     });
 
