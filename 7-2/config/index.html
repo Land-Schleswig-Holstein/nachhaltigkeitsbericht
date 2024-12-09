@@ -117,7 +117,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Konfiguration bearbeiten: 1.2.2 - Indikatoren für die nachhaltigen Entwicklungsziele</title>
+    <title>Konfiguration bearbeiten: 7.2 - Indikatoren für die nachhaltigen Entwicklungsziele</title>
 
 
 
@@ -242,7 +242,7 @@ data-event-label="high"
 
 <div id="main-content" class="container" role="main">
   <div class="row">
-    <div class="col-md-12"><h1>Konfiguration bearbeiten: 1.2.2</h1></div>
+    <div class="col-md-12"><h1>Konfiguration bearbeiten: 7.2</h1></div>
   </div>
   <div class="config-widgets row">
     <div class="col-md-6" id="search_holder">
@@ -466,6 +466,18 @@ data-event-label="high"
     // Set values according to this site's configuration.
     propertyEditorAccessibilityFixes(editor.getEditor('root.composite_breakdown_label'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('computation_units', "Tsd. Personen");
+        var propertyEditor = editor.getEditor('root.computation_units');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: computation_units');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.computation_units'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.copyright'));
@@ -482,6 +494,18 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_show_map'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('data_start_values', [{"field":"Geschlecht","value":"Frauen"}]);
+        var propertyEditor = editor.getEditor('root.data_start_values');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: data_start_values');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_start_values'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.embedded_feature_footer'));
@@ -510,7 +534,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('graph_title', "Arbeitslosenanteile");
+        var currentValue = normalizeCurrentValue('graph_title', "Definition");
         var propertyEditor = editor.getEditor('root.graph_title');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -542,7 +566,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('indicator_name', "global_indicators.1-2-2-title");
+        var currentValue = normalizeCurrentValue('indicator_name', "Indikator für Nachhaltigkeit");
         var propertyEditor = editor.getEditor('root.indicator_name');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -556,7 +580,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('indicator_number', "1.2.2");
+        var currentValue = normalizeCurrentValue('indicator_number', "7-2");
         var propertyEditor = editor.getEditor('root.indicator_number');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -586,6 +610,18 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.proxy_series'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('publications', [{"title":"Indikator Indikator für Nachhaltigkeit","link":"http://10.61.63.178/good-governance-und-gesellschaftliche-teilhabe/haeufigkeitszahl-straftaten","description":"Weiterführende Informationen zu diesem Indikator im Nachhaltigkeitsbericht des Landes Shleswig-Holstein.","placeholder":"Noch keine Daten hinterlegt...","date":1733702400000}]);
+        var propertyEditor = editor.getEditor('root.publications');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: publications');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.publications'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.related_indicators'));
@@ -633,7 +669,7 @@ data-event-label="high"
     function addTranslationLink(propertyEditor) {
       var parts = propertyEditor.value.split('.');
       var translationLink = '';
-      translationLink = translationLink.replace('[id]', '1-2-2');
+      translationLink = translationLink.replace('[id]', '7-2');
       translationLink = translationLink.replace('[group]', parts[0]);
       translationLink = translationLink.replace('[key]', parts[1]);
       translationLink = translationLink.replace('[language]', 'de');
@@ -668,7 +704,7 @@ data-event-label="high"
       else {
         var config = editor.getValue();
         var yaml = jsyaml.safeDump(config);
-        SaveAsFile(yaml, '1-2-2.yml', 'text/plain;charset=utf-8');
+        SaveAsFile(yaml, '7-2.yml', 'text/plain;charset=utf-8');
       }
     });
 
