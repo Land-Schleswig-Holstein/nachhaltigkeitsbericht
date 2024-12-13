@@ -193,8 +193,8 @@ menu:
 metadata_edit_url: metadata
 metadata_tabs:
   - scope: publications
-    title: 'Klicken Sie hier'
-    description: 'Weitere Indikator-Informationen des Landes Schleswig-Holstein finden Sie hier:'
+    title: 'Informationen zum Indikator'
+    description: 'Informationen und weitere Details zum Indikator, veröffentlicht im Nachhaltigkeitsbericht des Landes Schleswig-Holstein, finden Sie hier:'
     placeholder: 'Noch keine weiteren Infos hinterlegt.'
   #- scope: national
   #  title: indicator.national_metadata
