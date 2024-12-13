@@ -117,7 +117,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Metadaten bearbeiten: 7.1 - Indikatoren für die nachhaltigen Entwicklungsziele</title>
+    <title>Metadaten bearbeiten: 12.12 - Indikatoren für die nachhaltigen Entwicklungsziele</title>
 
 
 
@@ -242,7 +242,7 @@ data-event-label="high"
 
 <div id="main-content" class="container" role="main">
   <div class="row">
-    <div class="col-md-12"><h1>Metadaten bearbeiten: 7.1</h1></div>
+    <div class="col-md-12"><h1>Metadaten bearbeiten: 12.12</h1></div>
   </div>
   <div class="config-widgets row">
     <div class="col-md-6" id="search_holder">
@@ -544,7 +544,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_data_updated_date', "2024-12-09");
+        var currentValue = normalizeCurrentValue('national_data_updated_date', "2024-12-13");
         var propertyEditor = editor.getEditor('root.national_data_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -558,7 +558,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2024-12-09");
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2024-12-13");
         var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -591,7 +591,7 @@ data-event-label="high"
     function addTranslationLink(propertyEditor) {
       var parts = propertyEditor.value.split('.');
       var translationLink = '';
-      translationLink = translationLink.replace('[id]', '7-1');
+      translationLink = translationLink.replace('[id]', '12-12');
       translationLink = translationLink.replace('[group]', parts[0]);
       translationLink = translationLink.replace('[key]', parts[1]);
       translationLink = translationLink.replace('[language]', 'de');
@@ -626,7 +626,7 @@ data-event-label="high"
       else {
         var config = editor.getValue();
         var yaml = jsyaml.safeDump(config);
-        SaveAsFile(yaml, '7-1.yml', 'text/plain;charset=utf-8');
+        SaveAsFile(yaml, '12-12.yml', 'text/plain;charset=utf-8');
       }
     });
 

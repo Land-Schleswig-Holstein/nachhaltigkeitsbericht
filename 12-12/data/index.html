@@ -117,7 +117,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>About - Indikatoren für die nachhaltigen Entwicklungsziele</title>
+    <title>Daten bearbeiten: 12.12 - Indikatoren für die nachhaltigen Entwicklungsziele</title>
 
 
 
@@ -162,7 +162,7 @@ var translations = {
 
     </head>
 <body class="language-de
-layout-page
+layout-data-editor
 ">
 <!-- <div class="container"> -->
 
@@ -207,7 +207,7 @@ layout-page
     <a class="nav-link" href="/nachhaltigkeitsbericht/news">Aktualisierungen</a>
 </li><li class="nav-item ">
     <a class="nav-link" href="/nachhaltigkeitsbericht/faq">FAQ</a>
-</li><li class="nav-item active">
+</li><li class="nav-item ">
     <a class="nav-link" href="/nachhaltigkeitsbericht/about">Über uns</a>
 </li></ul>
     
@@ -240,64 +240,135 @@ data-event-label="high"
 <div id="top" tabindex=-1></div>
 
 
-<div class="container">
-    <nav>
-    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
-        <li class="breadcrumb-item" >
-            <a href="/nachhaltigkeitsbericht/">Startseite</a>
-        </li>
-        <li class="breadcrumb-item active">About</li>
-    </ol>
-</nav>
-</div>
 <div id="main-content" class="container" role="main">
-    <div>
-        <h1>About</h1>
-        
-
-
-    <h2 id="table-of-contents">Table of contents</h2>
-<ul>
-  <li><a href="#about-this-site">About this site</a></li>
-  <li><a href="#need-more-info">Need more info?</a></li>
-  <li><a href="#feedback">Feedback</a></li>
-</ul>
-
-<p>The <a href="http://www.un.org/sustainabledevelopment/sustainable-development-goals/">Sustainable Development Goals</a> (SDGs) are a universal call to action to:</p>
-
-<ul>
-  <li>
-    <p>end poverty</p>
-  </li>
-  <li>
-    <p>protect the planet</p>
-  </li>
-  <li>
-    <p>improve the lives and prospects of everyone, everywhere</p>
-  </li>
-</ul>
-
-<p>The 17 Goals were adopted by all UN Member States in 2015, as part of the <a href="https://sustainabledevelopment.un.org/post2015/transformingourworld">2030 Agenda for Sustainable Development</a>.</p>
-
-<h2 id="about-this-site">About this site</h2>
-<p>This site is based on the open source <a href="https://open-sdg.org/">Open SDG</a> platform.</p>
-
-<p>Other countries or organisations wishing to reuse the Open SDG reporting platform are welcome to do so for free. The <a href="https://open-sdg.readthedocs.io/en/latest/quick-start/">Open SDG Quick Start Guide</a> gives technical instructions on the quickest way to get a copy of the Open SDG platform up and running.</p>
-
-<p>If you have comments, feedback, or want to get involved with the Open SDG community please email <a href="mailto:opensdg@outlook.com">opensdg@outlook.com</a> or contact the <a href="https://github.com/open-sdg/open-sdg">Open SDG GitHub</a>.</p>
-
-<h2 id="need-more-info">Need more info?</h2>
-<p>Answers to some specific questions about this website are included on our <a href="/nachhaltigkeitsbericht/faq/">frequently asked questions</a> page.</p>
-
-<h2 id="feedback">Feedback</h2>
-<p>To provide feedback on our SDG data please <a href="/nachhaltigkeitsbericht/contact-us">contact us</a></p>
-
-
-
-
+  <div class="row no-gutters">
+    <div class="col-md-12"><h1>Daten bearbeiten: 12.12</h1></div>
+  </div>
+  <div class="row config-widgets">
+    <div class="col-md-6 data-grid-buttons">
+      <label for="add-column-name">Column name</label>
+      <input id="add-column-name" />
+      <button class="btn btn-primary btn-download" id="add-column">Add column</a>
     </div>
-</div>
+    <div class="col-md-6 data-download-buttons">
+      <button class="config-download-button btn btn-primary btn-download" id="export">Download data</button>
+      
+      
+      
+      
+      <a class="config-repository-button btn btn-primary btn-download" target="_blank" href="https://github.com/Land-Schleswig-Holstein/osdg-data/tree/develop/data">
+        Go to repository
+      </a>
+      
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="editor-wrapper col-md-12">
+      <div id="editor-holder" style="height: 900px; width: 100%;" class="ag-theme-alpine"></div>
+    </div>
+  </div>
 
+  <script src="https://unpkg.com/papaparse@5.3.2/papaparse.min.js"></script>
+  <script src="https://unpkg.com/ag-grid-community@28.2.1/dist/ag-grid-community.min.noStyle.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community@28.2.1/dist/styles/ag-grid.css">
+  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community@28.2.1/dist/styles/ag-theme-alpine.css">
+
+  <script>
+  var httpRequest;
+  var gridOptions;
+  function makeRequest() {
+    httpRequest = new XMLHttpRequest();
+
+    if (!httpRequest) {
+      alert('Giving up :( Cannot create an XMLHTTP instance');
+      return false;
+    }
+    httpRequest.onreadystatechange = displaySpreadsheet;
+    httpRequest.open('GET', 'https://land-schleswig-holstein.github.io/osdg-data/untranslated/data/12-12.csv');
+    httpRequest.send();
+  }
+
+  function displaySpreadsheet() {
+    if (httpRequest.readyState === XMLHttpRequest.DONE) {
+      if (httpRequest.status === 200) {
+        var csvString = httpRequest.responseText;
+        var csvData = Papa.parse(csvString, {header: true});
+        var columnDefs = [],
+            rowData = [];
+        if (csvData.data.length > 0) {
+          rowData = csvData.data;
+          columnDefs = Object.keys(rowData[0]).map(function(key) {
+            var columnDef = { field: key, headerName: key };
+            if (key === 'Value') {
+              columnDef['type'] = 'rightAligned';
+            }
+            return columnDef;
+          });
+        }
+        var container = document.getElementById('editor-holder');
+        gridOptions = {
+          defaultColDef: {
+            editable: true,
+            resizable: true,
+            minWidth: 100,
+            flex: 1,
+          },
+          columnDefs: columnDefs,
+          rowData: rowData,
+          undoRedoCellEditing: true,
+          undoRedoCellEditingLimit: 5,
+          enableCellChangeFlash: true,
+          enterMovesDownAfterEdit: true,
+          suppressDragLeaveHidesColumns: true,
+          applyColumnDefOrder: true,
+          onCellValueChanged: function(info) {
+            if (info.rowIndex + 1 === this.api.getDisplayedRowCount()) {
+              this.api.applyTransaction({
+                add: [{}],
+              });
+            }
+          }
+        };
+
+        new agGrid.Grid(container, gridOptions);
+      } else {
+        alert('There was a problem when loading the data. Please edit the data in some other way (such as in Github).');
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    makeRequest();
+  });
+
+  document.getElementById('export').onclick = function() {
+    gridOptions.api.stopEditing();
+    gridOptions.api.exportDataAsCsv({
+      fileName: 'indicator_12-12',
+    });
+  }
+
+  document.getElementById('add-column').onclick = function() {
+    var columnName = document.getElementById('add-column-name').value;
+    if (columnName && columnName !== '') {
+      var columnDefs = gridOptions.columnDefs;
+      var newColumn = { field: columnName, headerName: columnName };
+      if (columnDefs.length > 1) {
+        // Put it second-to-last if possible.
+        columnDefs.splice(columnDefs.length - 1, 0, newColumn);
+      }
+      else {
+        // Otherwise just last.
+        columnDefs.push(newColumn);
+      }
+      gridOptions.api.setColumnDefs(columnDefs);
+    }
+    else {
+      alert('Please enter a column name first and then try again.');
+    }
+  }
+  </script>
+</div>
 <footer role="contentinfo">
     <div class="container">
         <div class="row">
