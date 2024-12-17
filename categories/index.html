@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/nachhaltigkeitsbericht/assets/css/style.css?v=20241217133132">
+        <link rel="stylesheet" href="/nachhaltigkeitsbericht/assets/css/style.css?v=20241217133839">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -148,7 +148,7 @@ var translations = {
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
-        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/><link rel="stylesheet" href="/nachhaltigkeitsbericht/assets/css/custom.css?v=20241217133132">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/><link rel="stylesheet" href="/nachhaltigkeitsbericht/assets/css/custom.css?v=20241217133839">
         
 
         
@@ -308,169 +308,6 @@ data-event-label="high"
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 
 
-<script>
-  
-
-
-var klaroConfig = {
-    version: 1,
-    elementID: 'klaro',
-    styling: {
-        theme: ['light', 'top', 'wide'],
-    },
-    noAutoLoad: false,
-    htmlTexts: false,
-    embedded: false,
-    groupByPurpose: true,
-    storageMethod: 'cookie',
-    cookieName: 'cookie_settings',
-    cookieExpiresAfterDays: 365,
-    default: false,
-    mustConsent: false,
-    acceptAll: true,
-    hideDeclineAll: false,
-    hideLearnMore: false,
-    noticeAsModal: false,
-    services: [
-        {
-            name: 'contrast',
-            default: true,
-            purposes: ['functional'],
-            cookies: ['contrast'],
-            required: true,
-            optOut: false,
-            onlyOnce: true,
-        },
-        {
-            name: 'cookie_settings',
-            default: true,
-            purposes: ['functional'],
-            cookies: ['cookie_settings'],
-            required: true,
-            optOut: false,
-            onlyOnce: true,
-        },
-        
-        {
-            name: 'google-analytics',
-            default: false,
-            purposes: ['analytics'],
-            
-            cookies: ['_gat', '_gid', '_ga'],
-            
-            required: false,
-            optOut: false,
-            onlyOnce: false,
-        },
-        
-    ],
-};
-
-  klaroConfig.lang = 'de';
-klaroConfig.translations = {
-    de: {
-        acceptAll: null,
-        acceptSelected: null,
-        close: null,
-        consentModal: {
-            description: null,
-            title: null,
-        },
-        consentNotice: {
-            changeDescription: null,
-            description: null,
-            learnMore: null,
-            testing: null,
-        },
-        contextualConsent: {
-            acceptAlways: null,
-            acceptOnce: null,
-            description: null,
-        },
-        decline: null,
-        ok: null,
-        poweredBy: null,
-        privacyPolicy: {
-            name: null,
-            text: null,
-        },
-        purposeItem: {
-            service: null,
-            services: null,
-        },
-        purposes: {
-            functional: {
-                description: null,
-                title: null,
-            },
-            analytics: {
-                description: null,
-                title: null,
-            },
-        },
-        save: null,
-        service: {
-            disableAll: {
-                description: null,
-                title: null,
-            },
-            optOut: {
-                description: null,
-                title: null,
-            },
-            purpose: null,
-            purposes: null,
-            required: {
-                description: null,
-                title: null,
-            },
-        },
-    },
-};
-var allRequired = true;
-klaroConfig.services.forEach(function(service) {
-    if (!service.required) {
-        allRequired = false;
-    }
-    if (service.name === 'contrast') {
-        service.translations = {
-            de: {
-                description: null,
-                title: null,
-            },
-        }
-    }
-    else if (service.name === 'cookie_settings') {
-        service.translations = {
-            de: {
-                description: null,
-                title: null,
-            },
-        }
-    }
-    else if (service.name === 'google-analytics') {
-        service.translations = {
-            de: {
-                description: null,
-                title: null,
-            },
-        }
-    }
-});
-
-if (allRequired) {
-    klaroConfig.translations['de'].consentNotice.description = null;
-    klaroConfig.translations['de'].ok = null;
-    klaroConfig.hideDeclineAll = true;
-    klaroConfig.hideLearnMore = true;
-}
-
-</script>
-<script src="https://cdn.kiprotect.com/klaro/v0.7/klaro-no-css.js"></script>
-<script>translations['cookies'] = translations['cookies'] || {};
-    translations['cookies']['cookie_settings'] = '';</script>
-
-
 
 
 
@@ -482,12 +319,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/nachhaltigkeitsbericht/assets/js/sdg.js?v=20241217133132'></script>
+<script src='/nachhaltigkeitsbericht/assets/js/sdg.js?v=20241217133839'></script>
 
 
     
     
-    <script src="/nachhaltigkeitsbericht/assets/js/custom.js?v=20241217133132"></script><script>
+    <script src="/nachhaltigkeitsbericht/assets/js/custom.js?v=20241217133839"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
