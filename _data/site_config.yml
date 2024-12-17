@@ -81,7 +81,7 @@ frontpage_cards:
     rule_color: ''
   - title: Gemeinschaftswerk Nachhaltigkeit
     content: |
-      <img src="assets/img/logo.png"> Die Landesregierung Schleswig-Holstein ist Initiator beim Gemeinschaftswerk Nachhaltigkeit.
+      <img src="/nachhaltigkeitsbericht/assets/img/gemeinschaftswerk.png"> Die Landesregierung Schleswig-Holstein ist Initiator beim Gemeinschaftswerk Nachhaltigkeit.
     include: ''
     button_label: Mehr erfahren
     button_link: 'https://gemeinschaftswerk-nachhaltigkeit.de/app/organisations/1713'
