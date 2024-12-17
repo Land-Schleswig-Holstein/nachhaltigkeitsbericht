@@ -46,7 +46,7 @@ custom_css:
   - /assets/css/custom.css
 custom_js:
   - /assets/js/custom.js
-data_edit_url: data
+# data_edit_url: data
 data_fields:
   units: ''
   series: ''
@@ -192,7 +192,7 @@ menu:
   # - path: /about
   #  translation_key: menu.about
   #  dropdown: []    
-metadata_edit_url: metadata
+# metadata_edit_url: metadata
 metadata_tabs:
   - scope: publications
     title: 'Informationen zum Indikator'
