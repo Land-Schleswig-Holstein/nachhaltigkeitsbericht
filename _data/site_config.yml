@@ -65,7 +65,7 @@ email_contacts:
 environment: staging
 footer_language_toggle: none
 footer_menu:
-  - path: /contact-us
+  - path: /impressum
     translation_key: menu.contact_us
   # - path: 'https://twitter.com/MyTwitterAccount'
   #   translation_key: general.twitter
