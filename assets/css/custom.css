@@ -5,13 +5,13 @@
     float: left;
 }
 
-.navbar div {
+.navbar div#landeslogo {
     border-left: 1px solid #000;
     padding-left: 15px;
     padding-top: 4px;
     margin: 8px 0 0 0;
 }
-.navbar div img {
+.navbar div#landeslogo img {
     height: 90px;
     width: auto;
 }
