@@ -1,14 +1,16 @@
 ---
 layout: page
-title: Contact us
+title: Impressum
 language: de
-permalink: /contact-us/
+permalink: /impressum/
 ---
-### We are interested in your feedback regarding this website and its contents.
+### Herausgeber
 
+Der Ministerpräsident
+des Landes Schleswig-Holstein
+– Staatskanzlei –
+Düsternbrooker Weg 104
+24105 Kiel
 
-- If you have questions about the statistics, data sources, or metadata provided for our SDG indicators, please contact [{{site.email_contacts.questions}}](mailto:{{site.email_contacts.questions}})
-
-- If you have suggestions regarding additional site content or data sources, please contact [{{site.email_contacts.suggestions}}](mailto:{{site.email_contacts.suggestions}})
-
-- If you have suggestions on how to improve the functionality of this website, including data accessibility, please contact [{{site.email_contacts.functional}}](mailto:{{site.email_contacts.functional}})
+Tel.: +49 431 988-1741
+E-Mail: dirk.stangenberg@stk.landsh.de
