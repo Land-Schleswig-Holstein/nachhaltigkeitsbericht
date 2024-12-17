@@ -245,7 +245,7 @@ validate_indicator_config: false
 validate_site_config: true
 x_axis_label: ''
 # Konfiguration
-use_new_config_forms: true
+use_new_config_forms: false
 indicator_metadata_form:
-  enabled: true
+  enabled: false
   translated: false
