@@ -76,14 +76,14 @@ frontpage_cards:
     button_label: ''
     button_link: ''
     rule_color: ''
-  - title: Lorem ipsum
+  - title: Gemeinschaftswerk Nachhaltigkeit
     content: |
       <img src="assets/img/logo.png"> Die Landesregierung Schleswig-Holstein ist Initiator beim Gemeinschaftswerk Nachhaltigkeit.
     include: ''
     button_label: Mehr erfahren
     button_link: 'https://gemeinschaftswerk-nachhaltigkeit.de/app/organisations/1713'
     rule_color: ''
-  - title: Nam vestibulum
+  - title: 17 Ziele
     content: |
       Alles über die 17 Ziele der Nachhaltigkeit finden Sie hier.
     include: ''
