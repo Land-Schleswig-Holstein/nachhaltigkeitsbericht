@@ -4,13 +4,11 @@ title: Impressum
 language: de
 permalink: /impressum/
 ---
-### Herausgeber
-
-Der Ministerpräsident
-des Landes Schleswig-Holstein
-– Staatskanzlei –
-Düsternbrooker Weg 104
-24105 Kiel
-
-Tel.: +49 431 988-1741
+Der Ministerpräsident<br>
+des Landes Schleswig-Holstein<br>
+– Staatskanzlei –<br>
+Düsternbrooker Weg 104<br>
+24105 Kiel<br>
+<br>
+Tel.: +49 431 988-1741<br>
 E-Mail: dirk.stangenberg@stk.landsh.de
