@@ -49,10 +49,10 @@ data_edit_url: data
 data_fields:
   units: ''
   series: ''
-date_formats: [
+date_formats: 
   - type: standard
     language: de
-    format: "%d. %e. %Y"]
+    format: "%d %Y %m"
 disclaimer:
   phase: ''
   message: ''
