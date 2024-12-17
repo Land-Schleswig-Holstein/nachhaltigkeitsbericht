@@ -7,8 +7,7 @@
 
 .navbar div#landeslogo {
     border-left: 1px solid #000;
-    padding-left: 15px;
-    padding-top: 4px;
+    padding: 3px 15px 3px;
     margin: 8px 0 0 0;
 }
 .navbar div#landeslogo img {
