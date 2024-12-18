@@ -57,6 +57,22 @@
   },
   {
     "goal": {
+      "id": "4",
+      "title": "Inklusive, gleichberechtigte und hochwertige Bildung gewährleisten und Möglichkeiten lebenslangen Lernens für alle fördern",
+      "indicators": [
+        
+        {
+          "id": "4-1",
+          "title": "Bildung in SH",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/4-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "7",
       "title": "Zugang zu bezahlbarer, verlässlicher, nachhaltiger und moderner Energie für alle sichern",
       "indicators": [
