@@ -113,6 +113,22 @@
   },
   {
     "goal": {
+      "id": "9",
+      "title": "Eine widerstandsfähige Infrastruktur aufbauen, breitenwirksame und nachhaltige Industrialisierung fördern und Innovationen unterstützen",
+      "indicators": [
+        
+        {
+          "id": "9-1-",
+          "title": "TestIndikator",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/9-1-/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "12",
       "title": "Nachhaltige Konsum- und Produktionsmuster sicherstellen",
       "indicators": [
