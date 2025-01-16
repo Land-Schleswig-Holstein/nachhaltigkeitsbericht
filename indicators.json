@@ -57,6 +57,22 @@
   },
   {
     "goal": {
+      "id": "2",
+      "title": "Den Hunger beenden, Ernährungssicherheit und eine bessere Ernährung erreichen und eine nachhaltige Landwirtschaft fördern",
+      "indicators": [
+        
+        {
+          "id": "2-2-2",
+          "title": "Mein Indikator",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/2-2-2/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "4",
       "title": "Inklusive, gleichberechtigte und hochwertige Bildung gewährleisten und Möglichkeiten lebenslangen Lernens für alle fördern",
       "indicators": [
