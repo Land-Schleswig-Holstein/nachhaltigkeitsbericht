@@ -14,10 +14,10 @@
 #
 # See also _config_prod.yml in the root of this repository.
 
-environment: production
+# environment: production
 # Replace my-github-org and open-sdg-data-starter as needed.
-remote_data_prefix: "https://github.com/Land-Schleswig-Holstein/osdg-data"
+# remote_data_prefix: "https://github.com/Land-Schleswig-Holstein/osdg-data"
 
-analytics:
+# analytics:
   # For production, you likely want to enter a Google Analytics code below.
-  ga_prod: ''
+  # ga_prod: ''
