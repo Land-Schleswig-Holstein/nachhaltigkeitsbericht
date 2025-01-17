@@ -62,8 +62,7 @@ email_contacts:
   questions: nhbericht@stk.landsh.de
   suggestions: nhbericht@stk.landsh.de
   functional: nhbericht@stk.landsh.de
-environment: production 
-           # staging
+environment: staging
 footer_language_toggle: none
 footer_menu:
   - path: /impressum
