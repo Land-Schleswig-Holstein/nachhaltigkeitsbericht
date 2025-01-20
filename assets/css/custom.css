@@ -39,3 +39,8 @@
 .frontpage-goals-grid-description {
     font-size: larger
 }
+
+/* Bearbeiten ausblenden */
+# indicator-main ul.nav-tabs li:last-child {
+    display:none;
+}
