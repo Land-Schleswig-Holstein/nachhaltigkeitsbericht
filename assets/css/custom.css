@@ -5,14 +5,28 @@
     float: left;
 }
 
+.navbar-brand {
+  width: calc(100% - 75px);
+  max-width: 235px;
+  margin-bottom: 25px;
+}
 .navbar div#landeslogo {
     border-left: 1px solid #000;
     padding: 3px 15px 3px;
     margin: 8px 0 0 0;
 }
 .navbar div#landeslogo img {
-    height: 90px;
+    height: 60px;
     width: auto;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-brand {
+        max-width: 350px;
+    }
+    .navbar div#landeslogo img {
+        height: 90px;
+    }
 }
 
 .frontpage-goals-grid-description {
