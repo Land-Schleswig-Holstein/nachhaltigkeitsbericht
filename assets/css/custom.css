@@ -41,6 +41,6 @@
 }
 
 /* Bearbeiten ausblenden */
-# indicator-main ul.nav-tabs li:last-child {
+#indicator-main ul.nav-tabs li:last-child {
     display:none;
 }
