@@ -5198,6 +5198,8 @@ var indicatorInit = function () {
                 remoteUrl = opensdg.remoteDataBaseUrl + remoteUrl;
             }
 
+            console.log("remoteUrl:" + remoteUrl);
+
             $.ajax({
                 url: remoteUrl,
                 success: function (res) {
