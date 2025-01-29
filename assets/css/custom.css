@@ -40,11 +40,10 @@
     font-size: larger
 }
 
-/* Bearbeiten ausblenden
-#indicator-main ul.nav-tabs li:last-child {
+/* Bearbeiten ausblenden */
+#indicator-main ul.nav-tabs li:nth-child(3n) {
     display:none;
 }
-*/
 
 /* fehlenden Großbuchstaben korrigieren */
 .layout-reportingstatus #main-content .goal .total {
