@@ -42,10 +42,14 @@
 
 /* Bearbeiten ausblenden */
 #indicator-main ul.nav-tabs li:nth-child(3n) {
-    display:none;
+    display: none;
 }
 
 /* fehlenden Großbuchstaben korrigieren */
 .layout-reportingstatus #main-content .goal .total {
   text-transform: capitalize;
+}
+
+div.publication-date.small-text {
+    display: none;
 }
