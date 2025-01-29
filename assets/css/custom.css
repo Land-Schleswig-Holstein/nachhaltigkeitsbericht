@@ -40,7 +40,13 @@
     font-size: larger
 }
 
-/* Bearbeiten ausblenden */
+/* Bearbeiten ausblenden
 #indicator-main ul.nav-tabs li:last-child {
     display:none;
+}
+*/
+
+/* fehlenden Großbuchstaben korrigieren */
+.layout-reportingstatus #main-content .goal .total {
+  text-transform: capitalize;
 }
