@@ -196,7 +196,7 @@ menu:
 metadata_tabs:
   - scope: publications
     title: 'Informationen zum Indikator'
-    description: 'Informationen und weitere Details zum Indikator finden Sie hier:'
+    description: 'Weitere Informationen zum Indikator finden Sie hier.'
     placeholder: 'Noch keine weiteren Infos hinterlegt.'
   #- scope: national
   #  title: indicator.national_metadata
