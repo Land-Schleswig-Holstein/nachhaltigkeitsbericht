@@ -45,6 +45,11 @@
     display: none;
 }
 
+/* Quelle ausblenden */
+#selectionChartFooter dl dt:first-child, #selectionChartFooter dl dd:first-child {
+    display: none;
+}
+
 /* fehlenden Großbuchstaben korrigieren */
 .layout-reportingstatus #main-content .goal .total {
   text-transform: capitalize;
