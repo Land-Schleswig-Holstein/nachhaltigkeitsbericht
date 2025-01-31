@@ -46,7 +46,7 @@
 }
 
 /* Quelle ausblenden */
-#selectionChartFooter dl dt:first-child, #selectionChartFooter dl dd:first-child {
+#selectionChartFooter dl dt:not(.data-controlled-footer-field), #selectionChartFooter dl dd:not(.data-controlled-footer-field) {
     display: none;
 }
 
