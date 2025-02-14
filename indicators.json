@@ -25,6 +25,22 @@
   },
   {
     "goal": {
+      "id": "9",
+      "title": "Eine widerstandsfähige Infrastruktur aufbauen, breitenwirksame und nachhaltige Industrialisierung fördern und Innovationen unterstützen",
+      "indicators": [
+        
+        {
+          "id": "9-3",
+          "title": "Haushalte mit Glasfaseranschluss",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/9-3/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "16",
       "title": "Friedliche und inklusive Gesellschaften für eine nachhaltige Entwicklung fördern, allen Menschen Zugang zur Justiz ermöglichen und leistungsfähige, rechenschaftspflichtige und inklusive Institutionen auf allen Ebenen aufbauen",
       "indicators": [
