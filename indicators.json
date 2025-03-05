@@ -41,6 +41,22 @@
   },
   {
     "goal": {
+      "id": "10",
+      "title": "Ungleichheit in und zwischen Ländern verringern",
+      "indicators": [
+        
+        {
+          "id": "10-6",
+          "title": "Kommunen mit Vertretungen für Kinder und Jugendliche",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/10-6/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "16",
       "title": "Friedliche und inklusive Gesellschaften für eine nachhaltige Entwicklung fördern, allen Menschen Zugang zur Justiz ermöglichen und leistungsfähige, rechenschaftspflichtige und inklusive Institutionen auf allen Ebenen aufbauen",
       "indicators": [
