@@ -6,6 +6,14 @@
       "indicators": [
         
         {
+          "id": "1-2",
+          "title": "Mindestsicherungsquote",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/1-2/",
+          "status": "complete"
+        },
+        {
           "id": "1-3",
           "title": "SGB-II-Quote gesamt",
           "description": "",
