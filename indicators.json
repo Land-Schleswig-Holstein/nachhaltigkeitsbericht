@@ -161,6 +161,22 @@
   },
   {
     "goal": {
+      "id": "9",
+      "title": "Eine widerstandsfähige Infrastruktur aufbauen, breitenwirksame und nachhaltige Industrialisierung fördern und Innovationen unterstützen",
+      "indicators": [
+        
+        {
+          "id": "9-2",
+          "title": "Mobilfunkabdeckung",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/9-2/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "10",
       "title": "Ungleichheit in und zwischen Ländern verringern",
       "indicators": [
