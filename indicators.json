@@ -1,6 +1,22 @@
 [
   {
     "goal": {
+      "id": "5",
+      "title": "Geschlechtergleichstellung erreichen und alle Frauen und Mädchen zur Selbstbestimmung befähigen",
+      "indicators": [
+        
+        {
+          "id": "5-1-1",
+          "title": "Verdienstabstand zwischen Frauen und Männern",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/5-1-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "10",
       "title": "Ungleichheit in und zwischen Ländern verringern",
       "indicators": [
