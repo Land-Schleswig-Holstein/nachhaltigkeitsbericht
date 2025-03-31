@@ -1,16 +1,16 @@
 [
   {
     "goal": {
-      "id": "1",
-      "title": "Armut in allen ihren Formen und überall beenden",
+      "id": "10",
+      "title": "Ungleichheit in und zwischen Ländern verringern",
       "indicators": [
         
         {
-          "id": "1-2",
-          "title": "Mindestsicherung",
+          "id": "10-2",
+          "title": "Betriebliche Beschäftigungsquote Menschen mit Behinderungen",
           "description": "",
           "keywords": "",
-          "href": "/nachhaltigkeitsbericht/1-2/",
+          "href": "/nachhaltigkeitsbericht/10-2/",
           "status": "complete"
         }]
     }
