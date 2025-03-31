@@ -97,6 +97,22 @@
   },
   {
     "goal": {
+      "id": "8",
+      "title": "Dauerhaftes, breitenwirksames und nachhaltiges Wirtschaftswachstum, produktive Vollbeschäftigung und menschenwürdige Arbeit für alle fördern",
+      "indicators": [
+        
+        {
+          "id": "8-8",
+          "title": "Erwerbstätigenquote",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/8-8/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "10",
       "title": "Ungleichheit in und zwischen Ländern verringern",
       "indicators": [
