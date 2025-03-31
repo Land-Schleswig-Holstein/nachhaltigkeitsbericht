@@ -52,7 +52,7 @@ opensdg.annotationPresets = {
         borderColor: '#757575',
         label: {
             position: 'end',
-            content: translations.indicator.annotation_2030_target,
+            content: translations.indicator.annotation_target_2030,
         },
     },
     series_break: {
