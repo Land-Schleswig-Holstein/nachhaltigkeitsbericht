@@ -182,6 +182,14 @@
       "indicators": [
         
         {
+          "id": "8-6",
+          "title": "Rohstoffproduktivität",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/8-6/",
+          "status": "complete"
+        },
+        {
           "id": "8-8",
           "title": "Erwerbstätigenquote",
           "description": "",
