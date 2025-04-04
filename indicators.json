@@ -273,6 +273,22 @@
   },
   {
     "goal": {
+      "id": "12",
+      "title": "Nachhaltige Konsum- und Produktionsmuster sicherstellen",
+      "indicators": [
+        
+        {
+          "id": "12-1",
+          "title": "Siedlungsabfallaufkommen",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/12-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "13",
       "title": "Umgehend Maßnahmen zur Bekämpfung des Klimawandels und seiner Auswirkungen ergreifen",
       "indicators": [
