@@ -182,6 +182,14 @@
       "indicators": [
         
         {
+          "id": "8-5",
+          "title": "Materialverbrauch",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/8-5/",
+          "status": "complete"
+        },
+        {
           "id": "8-6",
           "title": "Rohstoffproduktivität",
           "description": "",
