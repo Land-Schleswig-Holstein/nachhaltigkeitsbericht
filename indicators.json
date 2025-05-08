@@ -54,6 +54,14 @@
       "indicators": [
         
         {
+          "id": "3-1",
+          "title": "Sterberate Neugeborene",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/3-1/",
+          "status": "complete"
+        },
+        {
           "id": "3-2",
           "title": "Vorzeitige Sterblichkeit",
           "description": "",
