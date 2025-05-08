@@ -70,6 +70,14 @@
       "indicators": [
         
         {
+          "id": "4-1",
+          "title": "Ganztagsbetreuung für Kinder",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/4-1/",
+          "status": "complete"
+        },
+        {
           "id": "4-2",
           "title": "Schulabsolventinnen und Schulabsolventen mit Migrationshintergrund",
           "description": "",
