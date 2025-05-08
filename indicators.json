@@ -54,14 +54,6 @@
       "indicators": [
         
         {
-          "id": "3-1",
-          "title": "Sterberate Neugeborene",
-          "description": "",
-          "keywords": "",
-          "href": "/nachhaltigkeitsbericht/3-1/",
-          "status": "complete"
-        },
-        {
           "id": "3-2",
           "title": "Vorzeitige Sterblichkeit",
           "description": "",
@@ -77,14 +69,6 @@
       "title": "Inklusive, gleichberechtigte und hochwertige Bildung gewährleisten und Möglichkeiten lebenslangen Lernens für alle fördern",
       "indicators": [
         
-        {
-          "id": "4-1",
-          "title": "Ganztagsbetreuung für Kinder",
-          "description": "",
-          "keywords": "",
-          "href": "/nachhaltigkeitsbericht/4-1/",
-          "status": "complete"
-        },
         {
           "id": "4-2",
           "title": "Schulabsolventinnen und Schulabsolventen mit Migrationshintergrund",
@@ -123,30 +107,6 @@
           "description": "",
           "keywords": "",
           "href": "/nachhaltigkeitsbericht/4-9/",
-          "status": "complete"
-        }]
-    }
-  },
-  {
-    "goal": {
-      "id": "5",
-      "title": "Geschlechtergleichstellung erreichen und alle Frauen und Mädchen zur Selbstbestimmung befähigen",
-      "indicators": [
-        
-        {
-          "id": "5-1-1",
-          "title": "Verdienstabstand zwischen Frauen und Männern",
-          "description": "",
-          "keywords": "",
-          "href": "/nachhaltigkeitsbericht/5-1-1/",
-          "status": "complete"
-        },
-        {
-          "id": "5-1-2",
-          "title": "Verdienstabstand zwischen Frauen und Männern",
-          "description": "",
-          "keywords": "",
-          "href": "/nachhaltigkeitsbericht/5-1-2/",
           "status": "complete"
         }]
     }
