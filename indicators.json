@@ -310,6 +310,14 @@
           "status": "complete"
         },
         {
+          "id": "9-3",
+          "title": "Zahl der Haushalte, für die ein Glasfaseranschluss (FTTB/FFTH) verfügbar ist",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/9-3/",
+          "status": "complete"
+        },
+        {
           "id": "9-4",
           "title": "Private und öffentliche Ausgaben für Forschung und Entwicklung",
           "description": "",
@@ -407,7 +415,7 @@
         },
         {
           "id": "11-2",
-          "title": "global_indicators.11-2-title",
+          "title": "Modal Split",
           "description": "",
           "keywords": "",
           "href": "/nachhaltigkeitsbericht/11-2/",
