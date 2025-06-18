@@ -686,4 +686,20 @@
           "status": "complete"
         }]
     }
+  },
+  {
+    "goal": {
+      "id": "17",
+      "title": "Umsetzungsmittel stärken und die Globale Partnerschaft für nachhaltige Entwicklung mit neuem Leben erfüllen",
+      "indicators": [
+        
+        {
+          "id": "17-1",
+          "title": "Öffentliche Entwicklungsausgaben",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/17-1/",
+          "status": "complete"
+        }]
+    }
   }]
