@@ -257,6 +257,22 @@
   },
   {
     "goal": {
+      "id": "6",
+      "title": "Verfügbarkeit und nachhaltige Bewirtschaftung von Wasser und Sanitärversorgung für alle gewährleisten",
+      "indicators": [
+        
+        {
+          "id": "6-2",
+          "title": "Ökologischer Zustand oberirdischer Gewässer",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/6-2/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "7",
       "title": "Zugang zu bezahlbarer, verlässlicher, nachhaltiger und moderner Energie für alle sichern",
       "indicators": [
