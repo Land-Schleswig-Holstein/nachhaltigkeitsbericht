@@ -513,6 +513,22 @@
   },
   {
     "goal": {
+      "id": "14",
+      "title": "Ozeane, Meere und Meeresressourcen im Sinne nachhaltiger Entwicklung erhalten und nachhaltig nutzen",
+      "indicators": [
+        
+        {
+          "id": "14-3",
+          "title": "Stickstoffkonzentration im Übergangsbereich Binnengewässer-Meer",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/14-3/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "15",
       "title": "Landökosysteme schützen, wiederherstellen und ihre nachhaltige Nutzung fördern, Wälder nachhaltig bewirtschaften, Wüstenbildung bekämpfen, Bodendegradation beenden und umkehren und dem Verlust der biologischen Vielfalt ein Ende setzen",
       "indicators": [
