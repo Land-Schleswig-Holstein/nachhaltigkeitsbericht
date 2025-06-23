@@ -119,9 +119,9 @@ var translations = {
         
     <title>
         
-        Indikator 5.1.2 -
+        Indikator 5.1 -
         
-        Verdienstabstand zwischen Frauen und Männern - Indikatoren für die nachhaltigen Entwicklungsziele
+        global_indicators.5-1-title - Indikatoren für die nachhaltigen Entwicklungsziele
     </title>
 
 
@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/nachhaltigkeitsbericht/assets/css/style.css?v=20250623090203">
+        <link rel="stylesheet" href="/nachhaltigkeitsbericht/assets/css/style.css?v=20250623092713">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -153,7 +153,7 @@ var translations = {
         <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
         <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
-        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/><link rel="stylesheet" href="/nachhaltigkeitsbericht/assets/css/custom.css?v=20250623090203">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/><link rel="stylesheet" href="/nachhaltigkeitsbericht/assets/css/custom.css?v=20250623092713">
         
 
         
@@ -276,9 +276,9 @@ layout-indicator-iframe
                 <div>
                     <h1>
                         
-                        Indikator 5.1.2
+                        Indikator 5.1
                         
-                        <span class="lead-copy">Verdienstabstand zwischen Frauen und Männern</span>
+                        <span class="lead-copy">global_indicators.5-1-title</span>
                     </h1>
                 </div>
             </div>
@@ -303,26 +303,26 @@ layout-indicator-iframe
 
 <div class="row"
   id="indicatorData"
-  data-indicatorid='indicator_5-1-2'
-  data-id="5-1-2"
+  data-indicatorid='indicator_5-1'
+  data-id="5-1"
   data-country="Schleswig-Holstein"
-  data-charttitle="Verdienst von Frauen und Männern mit vergleichbaren Qualifikationen, Tätigkeiten und Erwerbsbiografien – bereinigter Verdienstabstand"
+  data-charttitle="global_indicators.5-1-title"
   data-charttitles="null"
-  data-measurementunit="Euro"
+  data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Raum&quot;,&quot;value&quot;:&quot;Deutschland - unbereinigt&quot;},{&quot;field&quot;:&quot;Raum&quot;,&quot;value&quot;:&quot;Deutschland - bereinigt&quot;}]"
+  data-startvalues="null"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Raum&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Deutschland - unbereinigt&quot;,&quot;Deutschland - bereinigt&quot;,&quot;SH - bereinigt&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Raum&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Geschlecht&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Frauen&quot;,&quot;Männer&quot;,&quot;unbereinigter Gender Pay Gap &quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geschlecht&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -357,7 +357,7 @@ layout-indicator-iframe
   <div id="datatables">
 
     
-    <a role="button" href="https://land-schleswig-holstein.github.io/osdg-data/de/data/5-1-2.csv" class="btn btn-primary btn-download" download='indicator_5-1-2.csv' tabindex='0' role='button'>Daten im CSV-Format speichern</a>
+    <a role="button" href="https://land-schleswig-holstein.github.io/osdg-data/de/data/5-1.csv" class="btn btn-primary btn-download" download='indicator_5-1.csv' tabindex='0' role='button'>Daten im CSV-Format speichern</a>
 
     <p class="no-js-disaggregation-hint">Quell-CSV für Disaggregationen herunterladen</p>
 
@@ -449,7 +449,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Verdienst von Frauen und Männern mit vergleichbaren Qualifikationen, Tätigkeiten und Erwerbsbiografien – bereinigter Verdienstabstand
+            global_indicators.5-1-title
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -469,9 +469,6 @@ data-event-label="Change to Table tab"
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-        <dt>Datenquelle:</dt>
-        <dd>Destatis, Statistikamt Nord (Sonderauswertung)</dd>
-        
 
         
 
@@ -482,26 +479,6 @@ data-event-label="Change to Table tab"
 
         
 
-        
-        
-        <dt
-          data-for-series=""
-          data-for-unit=""
-        >2006 bis 2018:</dt>
-        <dd
-          data-for-series=""
-          data-for-unit=""
-        >Ergebnisse aus der Verdienststrukturerhebung</dd>
-        
-        <dt
-          data-for-series=""
-          data-for-unit=""
-        >Seit 2022:</dt>
-        <dd
-          data-for-series=""
-          data-for-unit=""
-        >Ergebnisse aus der Verdiensterhebung</dd>
-        
         
 
         
@@ -562,9 +539,6 @@ data-event-label="Change to Table tab"
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-        <dt>Datenquelle:</dt>
-        <dd>Destatis, Statistikamt Nord (Sonderauswertung)</dd>
-        
 
         
 
@@ -575,26 +549,6 @@ data-event-label="Change to Table tab"
 
         
 
-        
-        
-        <dt
-          data-for-series=""
-          data-for-unit=""
-        >2006 bis 2018:</dt>
-        <dd
-          data-for-series=""
-          data-for-unit=""
-        >Ergebnisse aus der Verdienststrukturerhebung</dd>
-        
-        <dt
-          data-for-series=""
-          data-for-unit=""
-        >Seit 2022:</dt>
-        <dd
-          data-for-series=""
-          data-for-unit=""
-        >Ergebnisse aus der Verdiensterhebung</dd>
-        
         
 
         
@@ -698,31 +652,13 @@ data-event-label="Change to indicator.sources tab"
         
         <div role="tabpanel" class="tab-pane active" id="publications">
             <article>
-                <p>Weitere Informationen zum Indikator finden Sie hier.</p>
+                
 
                 
-<div class="row">
-
-    <article class="publication">
-        
-        <h2 class="publication-title">
-            <a href="Link zum redaktionellen Text">Indikator Verdienstabstand zwischen Frauen und Männern</a>
-        </h2>
-        
-        
-        <div class="publication-description">
-            
-
-        </div>
-        
-        
-        <div class="publication-date small-text">
-            <time datetime="57215-06-28T00:00:00+00:00">31. 03. 2025</time>
-        </div>
-        
-    </article>
-
+    
+    <div class="empty-metadata-placeholder"><p>Noch keine weiteren Infos hinterlegt.</p>
 </div>
+    
 
 
             </article>
@@ -743,408 +679,6 @@ data-event-label="Change to indicator.sources tab"
 
 
 
-
-  <div class="row">
-  
-    
-    
-    <div class="col-md-6">
-      
-      
-        <h4>Datenquelle 1</h4>
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Organisation </th>
-        <td>
-          
-            <p>Destatis</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Link zur Datenquelle </th>
-        <td>
-          
-            
-            
-            
-            
-            
-              <a href="https://www.destatis.de/DE/Themen/Arbeit/Verdienste/Verdienste-GenderPayGap/_inhalt.html#sprg633276" target="_blank">
-                Destatis - Gender Pay Gap <span class="visuallyhidden">in neuem Fenster öffnen</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-    
-    
-    <div class="col-md-6">
-      
-      
-        <h4>Datenquelle 2</h4>
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Organisation </th>
-        <td>
-          
-            <p>Statistikamt Nord (Sonderauswertung)</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-  </div>
 
 
             </article>
@@ -1185,12 +719,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/nachhaltigkeitsbericht/assets/js/sdg.js?v=20250623090203'></script>
+<script src='/nachhaltigkeitsbericht/assets/js/sdg.js?v=20250623092713'></script>
 
 
     
     
-    <script src="/nachhaltigkeitsbericht/assets/js/custom.js?v=20250623090203"></script><script>
+    <script src="/nachhaltigkeitsbericht/assets/js/custom.js?v=20250623092713"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
