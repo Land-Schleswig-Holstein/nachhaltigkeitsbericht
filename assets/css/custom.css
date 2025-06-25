@@ -46,9 +46,9 @@
 }
 
 /* Quelle ausblenden */
-#selectionChartFooter dl dt:not(.data-controlled-footer-field), #selectionChartFooter dl dd:not(.data-controlled-footer-field) {
+*/ #selectionChartFooter dl dt:not(.data-controlled-footer-field), #selectionChartFooter dl dd:not(.data-controlled-footer-field) {
     display: none;
-}
+} +/
 
 /* fehlenden Großbuchstaben korrigieren */
 .layout-reportingstatus #main-content .goal .total {
