@@ -590,6 +590,14 @@
       "indicators": [
         
         {
+          "id": "14-1-1",
+          "title": "Ökologischer Zustand der Küstengewässer",
+          "description": "",
+          "keywords": "",
+          "href": "/nachhaltigkeitsbericht/14-1-1/",
+          "status": "complete"
+        },
+        {
           "id": "14-2",
           "title": "Belastung der Küstengewässer durch Müll",
           "description": "",
